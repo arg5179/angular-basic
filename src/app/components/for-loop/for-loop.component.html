@@ -1,0 +1,11 @@
+<h3>Users list</h3>
+@for( user of users; track user; let id = $index){
+    <div class="user_data">
+        <h5>{{id}}</h5>
+        <h4>{{user.name}}</h4>
+        <h5>{{user.age}}</h5>
+        <h5>{{user.city}}</h5>
+        <h5>{{user.country}}</h5>
+        <button class="name_btn" (click)="getName(user.name)">Get Name</button>
+    </div>
+}

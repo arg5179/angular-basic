@@ -1,0 +1,46 @@
+{
+  "user": [
+    {
+      "name": "John Doe",
+      "age": 27,
+      "email": "asldfd@hcl.com",
+      "id": "722b"
+    },
+    {
+      "name": "Jane Smith",
+      "age": 25,
+      "email": "jbcdn@hcl.com",
+      "id": "0e13"
+    },
+    {
+      "name": "Alice Johnson",
+      "age": 28,
+      "email": "ali@hcl.com",
+      "id": "a6cd"
+    },
+    {
+      "id": "30ed",
+      "name": "AakashTest21",
+      "age": 20,
+      "email": "technology.@hcl.com"
+    },
+    {
+      "id": "829d",
+      "name": "qwertuy",
+      "age": 19,
+      "email": "Ankit.gupta1@hcl.com"
+    },
+    {
+      "id": "06bf",
+      "name": "HCL HEALTHCARE",
+      "age": 29,
+      "email": "senku@gmail.com"
+    },
+    {
+      "id": "6bad",
+      "name": "AakashClone",
+      "age": 26,
+      "email": "nimi@hcl.com"
+    }
+  ]
+}

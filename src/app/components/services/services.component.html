@@ -1,0 +1,5 @@
+<button (click)="getItemData()">Get data</button>
+
+@for(item of itemData; track item.id){
+  <p>{{item.name}}</p>
+}

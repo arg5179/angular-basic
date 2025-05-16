@@ -1,0 +1,17 @@
+*{
+    color: #FFF;
+}
+
+.user_data{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+.name_btn{
+    color: #000;
+}
+h4,h5{
+    margin: 3px 0;
+}

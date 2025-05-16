@@ -1,0 +1,18 @@
+<nav>
+    <h2>Header Routing Component</h2>
+        <ul>
+            <li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"  routerLink="">Two-way data</a></li>
+            <li><a routerLinkActive="active" routerLink="counter">Counter</a></li>
+            <li><a routerLinkActive="active" routerLink="control">Control</a></li>
+            <li><a routerLinkActive="active" routerLink="event">Event</a></li>
+            <li><a routerLinkActive="active" routerLink="button-click">Button-Click</a></li>
+        </ul>
+</nav>
+
+<!-- <div>
+    <h3>Routing Example</h3>
+    <p>Click on the links above to navigate to different components.</p>
+    <button (click)="handleProfile()">Go to profile page</button>
+    <a [routerLink]="['todolist', {name:'ARG'}]">Go to Todo list</a>
+</div> -->
+<router-outlet />

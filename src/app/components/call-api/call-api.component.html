@@ -1,0 +1,28 @@
+<div class="call_api_div">
+    <h4>API Call services</h4>
+
+    <form #userForm="ngForm" (ngSubmit)="addUser(userForm.value)">
+        <input type="text" placeholder="Name" name="name" [ngModel]="selectedUser?.name">
+        <input type="number" placeholder="Age" name="age" [ngModel]="selectedUser?.age">
+        <input type="text" placeholder="Email" name="email" [ngModel]="selectedUser?.email">
+        @if (!selectedUser) {
+            <button>Add</button>
+        }
+        @else {
+            <button>Update</button>
+        }
+        
+    </form>
+
+    @for (user of users; track user.id) {
+        <ul>
+            <li>
+                <span>{{ user.name }}, {{ user.age }}, {{ user.email }}</span>
+                <div class="button-group">
+                    <button (click)="deleteUser(user.id)">Remove</button>
+                    <button (click)="updateSelectedUser(user.id)">Update</button>
+                </div>
+            </li>
+        </ul>
+    }
+</div>

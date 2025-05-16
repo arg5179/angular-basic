@@ -1,0 +1,33 @@
+<h2>Directives</h2>
+
+<h4>Component Directives</h4>   <!--@component -->
+<h4>Attribure Directives</h4>   <!--ngStyle, ngClass -->
+<h4>Structural Directives</h4>` <!--ngIf, ngFor, ngSwitch -->
+
+<h5 *ngIf="show">Show</h5>
+<h5>{{login ? 'Login' : 'Logout'}}</h5>
+
+<div>
+    <ul *ngFor="let student of students">
+        <li>{{student}}</li>
+    </ul>
+</div>
+
+<div>
+    <ul *ngFor="let user of users">
+        <li>{{user.name}} : {{user.age}} - {{user.email}}</li>
+    </ul>
+</div>
+<hr />
+<div>
+    <ul *ngFor="let user of users2">
+        <li>
+            {{user.name}} : {{user.age}}, {{user.email}}
+            <br />
+            His hobbies :
+            <ul *ngFor="let hobby of user.hobbies">
+                <li>{{hobby}}</li>
+            </ul>
+        </li>
+    </ul>
+</div>

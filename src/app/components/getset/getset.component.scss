@@ -1,0 +1,21 @@
+h3, h4{
+    color: #dddddd;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 4px 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    background-color: #f9f9f9;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #989898;
+}
+button{
+    margin-bottom: 10px
+}

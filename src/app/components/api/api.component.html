@@ -1,0 +1,36 @@
+<h3>Product Data</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Minimum Order</th>
+      <th>Category</th>
+      <th>Rating</th>
+      <th>Stock</th>
+      <th>Brand</th>
+      <th>Discount %</th>
+      <th>ID</th>
+      <th>Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (product of productList; track product.id) {
+      <tr>
+        <td>{{ product.title }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.minimumOrderQuantity }}</td>
+        <td>{{ product.category }}</td>
+        <td>{{ product.rating }}</td>
+        <td>{{ product.stock }}</td>
+        <td>{{ product.brand }}</td>
+        <td>{{ product.discountPercentage }}%</td>
+        <td>{{ product.id }}</td>
+        <td><img src={{product.thumbnail}} alt="" width="100px"></td>
+      </tr>
+    }
+  </tbody>
+</table>

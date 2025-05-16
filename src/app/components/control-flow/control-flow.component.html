@@ -1,0 +1,66 @@
+<h3 style="color: #fff;">Control flow</h3>
+<br/>
+
+<!-- If else statement -->
+
+<button (click)="hideDiv()">Hide div</button>
+<button (click)="toggle()">Toggle</button>
+
+@if(display){
+    <div class="control_div">
+
+    </div>
+}
+
+<button (click)="toggleTwo()">Toggle div</button>
+
+@if(togglediv){
+    <div class="control_div1">
+
+    </div>
+}
+
+@else {
+    <div class="control_div2">
+
+    </div>
+}
+
+
+
+<!-- else if statement -->
+
+<button (click)="handleBgcolor(1)">1</button>
+<button (click)="handleBgcolor(2)">2</button>
+<button (click)="handleBgcolor(3)">3</button>
+<button (click)="handleBgcolor(4)">4</button>
+<hr/>
+
+<input type="text" placeholder="Enter color number" (input)="handleInput($event)"/>
+<br/>
+
+@if(color == 1){
+    <div class="control_div1">
+
+    </div>
+}
+@else if (color == 2) {
+    <div class="control_div2">
+
+    </div>
+}
+@else if (color == 3) {
+    <div class="control_div3">
+
+    </div>
+}
+@else {
+    <div class="control_div4">
+
+    </div>
+}
+
+
+
+
+<!-- switch case statement -->
